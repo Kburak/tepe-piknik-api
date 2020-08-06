@@ -7,7 +7,7 @@ class HotelRoom(models.Model):
     room_size = models.IntegerField()
     available = models.BooleanField(default=True)
     sqrt = models.IntegerField()
-    image = models.ImageField(blank=True, upload_to='media/room-photo')
+    image = models.ImageField(blank=True, upload_to='room-photo')
     price = models.DecimalField(max_digits=5, decimal_places=2)
 
     def __str__(self):
